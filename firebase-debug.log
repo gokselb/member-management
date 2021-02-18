@@ -1,0 +1,35 @@
+[debug] [2021-02-18T20:46:19.305Z] ----------------------------------------------------------------------
+[debug] [2021-02-18T20:46:19.307Z] Command:       /usr/local/bin/node /usr/local/bin/firebase deploy
+[debug] [2021-02-18T20:46:19.307Z] CLI Version:   9.4.0
+[debug] [2021-02-18T20:46:19.307Z] Platform:      darwin
+[debug] [2021-02-18T20:46:19.307Z] Node Version:  v14.15.5
+[debug] [2021-02-18T20:46:19.308Z] Time:          Thu Feb 18 2021 23:46:19 GMT+0300 (GMT+03:00)
+[debug] [2021-02-18T20:46:19.308Z] ----------------------------------------------------------------------
+[debug] [2021-02-18T20:46:19.309Z] 
+[debug] [2021-02-18T20:46:19.316Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2021-02-18T20:46:19.316Z] > authorizing via signed-in user
+[debug] [2021-02-18T20:46:19.316Z] [iam] checking project member-camlibel for permissions ["firebase.projects.get","firebasedatabase.instances.update","firebasehosting.sites.update"]
+[debug] [2021-02-18T20:46:19.319Z] >>> HTTP REQUEST POST https://cloudresourcemanager.googleapis.com/v1/projects/member-camlibel:testIamPermissions  
+ {"permissions":["firebase.projects.get","firebasedatabase.instances.update","firebasehosting.sites.update"]}
+[debug] [2021-02-18T20:46:19.655Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Thu, 18 Feb 2021 20:46:19 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","server-timing":"gfet4t7; dur=169","alt-svc":"h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2021-02-18T20:46:19.659Z] > refreshing access token with scopes: []
+[debug] [2021-02-18T20:46:19.659Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
+ <request body omitted>
+[debug] [2021-02-18T20:46:19.846Z] <<< HTTP RESPONSE 200 {"cache-control":"no-cache, no-store, max-age=0, must-revalidate","pragma":"no-cache","expires":"Mon, 01 Jan 1990 00:00:00 GMT","date":"Thu, 18 Feb 2021 20:46:19 GMT","content-type":"application/json; charset=utf-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","server":"scaffolding on HTTPServer2","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2021-02-18T20:46:19.876Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/member-camlibel [none]
+[debug] [2021-02-18T20:46:20.162Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/member-camlibel 200
+[debug] [2021-02-18T20:46:20.162Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/member-camlibel {"projectId":"member-camlibel","projectNumber":"1045033837216","displayName":"member-camlibel","name":"projects/member-camlibel","resources":{"hostingSite":"member-camlibel","realtimeDatabaseInstance":"member-camlibel-default-rtdb","storageBucket":"member-camlibel.appspot.com","locationId":"us-central"},"state":"ACTIVE"}
+[debug] [2021-02-18T20:46:20.163Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/member-camlibel [none]
+[debug] [2021-02-18T20:46:20.477Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/member-camlibel 200
+[debug] [2021-02-18T20:46:20.477Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/member-camlibel {"projectId":"member-camlibel","projectNumber":"1045033837216","displayName":"member-camlibel","name":"projects/member-camlibel","resources":{"hostingSite":"member-camlibel","realtimeDatabaseInstance":"member-camlibel-default-rtdb","storageBucket":"member-camlibel.appspot.com","locationId":"us-central"},"state":"ACTIVE"}
+[info] 
+[info] === Deploying to 'member-camlibel'...
+[info] 
+[info] i  deploying database, hosting 
+[info] i  database: checking rules syntax... 
+[debug] [2021-02-18T20:46:20.482Z] > refreshing access token with scopes: ["email","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","openid"]
+[debug] [2021-02-18T20:46:20.482Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
+ <request body omitted>
+[debug] [2021-02-18T20:46:20.689Z] <<< HTTP RESPONSE 200 {"expires":"Mon, 01 Jan 1990 00:00:00 GMT","cache-control":"no-cache, no-store, max-age=0, must-revalidate","date":"Thu, 18 Feb 2021 20:46:20 GMT","pragma":"no-cache","content-type":"application/json; charset=utf-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","server":"scaffolding on HTTPServer2","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2021-02-18T20:46:20.715Z] >>> HTTP REQUEST GET https://firebasedatabase.googleapis.com/v1beta/projects/member-camlibel/locations/-/instances/member-camlibel-default-rtdb  
+ 

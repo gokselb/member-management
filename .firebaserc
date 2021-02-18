@@ -1,0 +1,14 @@
+{
+  "projects": {
+    "default": "member-camlibel"
+  },
+  "targets": {
+    "member-camlibel": {
+      "hosting": {
+        "member-management": [
+          "member-camlibel"
+        ]
+      }
+    }
+  }
+}
